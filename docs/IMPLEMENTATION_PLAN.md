@@ -1,13 +1,21 @@
-# Yandex Cloud MCP: BRICS management extension
+# Yandex Cloud MCP: general-purpose management extension
 
 Date: 2026-10-06. Base: vadyusha/yandex-cloude-mcp main.
-Fork: Grenguar/yandex-cloude-mcp. Branch: feat/brics-cloud-management.
+Fork: Grenguar/yandex-cloude-mcp. Branch: feat/yandex-cloud-management.
 
 ## Objective
 
 Run a tested local Docker MCP server usable from Codex and Claude, with discovery,
-read and management operations for the Yandex Cloud services used by BRICS.
+read and management operations across Yandex Cloud services. BRICS supplies an
+initial real-world validation environment, not hardcoded configuration.
 Keep BRICS application code and infrastructure unchanged during development.
+
+## Public contribution requirements
+
+Keep runtime configuration generic: no customer IDs, names, domains, credentials,
+or production inventory in committed fixtures or documentation. Preserve the fork
+relationship and upstream attribution. Write reusable setup and API documentation
+suitable for a future upstream pull request. Keep actual live test details local.
 
 ## Evidence and scope
 
